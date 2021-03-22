@@ -32,14 +32,19 @@ app.post("/account", (request, response) => {
     };
     customers.push(customer);
 
-    return response.status(201).send();
+    return response.status(201).send(customers);
 });
 
 app.get("/statement", (request, response) => {
-    const { cpf } = request.params;
+    const { cpf } = request.headers;
+
+    console.log(cpf);
 
     const customer = customers.find((customer) => customer.cpf === cpf);
 
+    if (!customer) {
+        return response.status(400).json({ error: "Customer doesnt exists" });
+    }
     return response.json(customer.statement);
 });
 
