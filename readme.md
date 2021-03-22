@@ -4,7 +4,7 @@ Projeto desenvolvido no módulo 1 do bootcamp Ignite da Rocketseat.
 
 ### Requisitos
 
-- [ ] Dever ser possível criar uma conta 
+- [x] Dever ser possível criar uma conta 
 - [ ] Dever ser possível buscar o extrato bancário do cliente
 - [ ] Dever ser possível realizar um depósito
 - [ ] Dever ser possível realizar um saque
@@ -15,7 +15,7 @@ Projeto desenvolvido no módulo 1 do bootcamp Ignite da Rocketseat.
 
 ### Regras de negócio
 
-- [ ] Não deve ser possível cadastrar uma conta com CPF já existente
+- [x] Não deve ser possível cadastrar uma conta com CPF já existente
 - [ ] Não deve ser possível fazer depósito em uma conta não existente
 - [ ] Não deve ser possível buscar extrato em uma conta não existente
 - [ ] Não deve ser possível fazer um saque em uma conta não existente
